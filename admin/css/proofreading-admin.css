@@ -1,0 +1,231 @@
+/* Settings pages */
+
+.proofreading-tab-content a, .scribit_credit a{
+	text-decoration: none;
+	transition: 0.3s;
+}
+.proofreading-tab-content a:hover, .scribit_credit a:hover{
+	opacity: .75;
+}
+.proofreading-tab-content a.button:hover{
+	background: #e3e5f6;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.proofreading-title{
+  float: left;
+  width: 100%;
+  margin-bottom: .5em;
+}
+.proofreading-title .proofreading-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.proofreading-title h1 {
+  display: inline-block;
+}
+.proofreading-logo img {
+  max-height: 55px;
+}
+
+.scribit_credit a{
+    background: transparent url(../images/logo_scribit.png) 0 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+	text-indent: 64px;
+    height: 32px;
+    width: 64px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.proofreading-tab-content .form-table th {
+    width: 300px;
+    padding: 8px 10px 18px 0;
+}
+.proofreading-tab-content .form-table table td{
+	padding: 3px 10px;
+}
+.proofreading-tab-content .form-table table .select_all_rules_row td{
+    padding-bottom: 15px;
+}
+
+.proofreading-tab-content td hr{
+	margin: 0;
+}
+
+.proofreading-backend span.dashicons {
+    vertical-align: sub;
+	margin-right: 5px;
+	font-size: 18px;
+}
+
+/* Backend pages */
+
+ul.proofreading_corrections li{
+	transition: all 0.2s;
+	margin-bottom: 20px;
+}
+
+.proofreading_correction_text{
+	overflow: auto;
+    background: #F5F5F5;
+    padding: 2px 10px;
+	margin: .5em 0 0 0;
+	white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-size: 85%;
+    line-height: 14px;
+	font-style: italic;
+}
+.proofreading_correction_button{
+	padding: 8px;
+    background: #F5F5F5;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.proofreading_analyze_results{
+	font-weight: bold;
+}
+.proofreading_error{
+	margin-bottom:.4em;
+	color: #900;
+}
+#proofreading_warning{
+	margin-bottom:.4em;
+	color: #C60;
+}
+#proofreading_success{
+	color: #090;
+}
+
+#proofreading_hidden_errors_number{
+	margin-top: 0;
+	color: #666;
+	font-weight: bold;
+	display: none;
+}
+
+.proofreading_correction_message{
+	clear:left;
+	font-size: 90%;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding: 6px 1em;
+	background: #E4E4E4;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#proofreading_box .language_selection{
+	float:right;
+	max-width: 100%;
+}
+#proofreading_box .language_selection label{
+	margin-right: 5px;
+}
+#proofreading_box .analyze_button{
+	display:block;
+}
+
+#proofreading_box .spinner{
+	margin-top: 6px;
+	float: none;
+}
+#proofreading_analyze{
+	float: left;
+}
+
+#proofreading_box button.dashicons{
+	padding: 0;
+    font-size: 14px;
+	margin-right: 2px;
+}
+ 
+.proofreading_compatibility_note{
+	margin-top: 15px;
+	font-size: 11px;
+    color: #777;
+}
+.proofreading_compatibility_note a{
+	text-decoration: none
+}
+
+.proofreading-settings table td{
+	padding: 5px 10px;
+}
+
+.settings_page_proofreading .button{
+	vertical-align: middle;
+}
+
+.proofreading-tab-content {
+    padding-top: 1em;
+}
+
+.proofreading-tab-content .form-table table.proofreading_rules td{
+	padding-left: 0;
+}
+
+
+/*** Scribit styles ***/
+.scribit_credit a {
+  background: transparent url(../images/logo_scribit.png) 0 0 no-repeat;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-indent: 64px;
+  height: 32px;
+  width: 64px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.scribit_plugin {
+	float: left;
+	margin-right: 1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.scribit_plugin .button {
+	float: right;
+}
+.scribit_plugin ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+.scribit_plugin img {
+	float: right;
+}
+.scribit_plugin .title {
+	margin-top: .5em;
+}
+.scribit_plugins .plugin-card-top .desc ul {
+   list-style: disc;
+   padding-left: 20px;
+}
+.scribit_plugins .plugin-card-top .desc ul li {
+   margin-bottom: 0;
+}
+
+.scribit_support_description {
+   text-align: right;
+   padding-right: 1em;
+}

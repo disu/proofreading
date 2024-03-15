@@ -1,7 +1,7 @@
 === Proofreading ===
 Contributors: scribit
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=riccardosormani@gmail.com&item_name=Proofreading WordPress plugin donation&no_note=0
-Tags: typo, grammar, misprint, errata, revision, editing
+Tags: typo, editing, misprint, errata, revision
 Requires at least: 4.0
 Tested up to: 6.4.3
 Stable tag: 1.2.1

@@ -75,12 +75,9 @@ class Proofreading_Activator {
 				WHERE longCode = %s", $wp_lang);
 			$res = $wpdb->get_col($sql);
 
-			//$res = $wpdb->get_col("SELECT code FROM `{$wpdb->prefix}proofreading_languages` WHERE longCode = '$wp_lang';");
 			if ( count($res) > 0 ) update_option( 'proofreading-language-default', $res[0]);
-			
 		}
 		
 		update_option( PROOFREADING_VERSION_SETTINGNAME , PROOFREADING_VERSION );
 	}
-
 }

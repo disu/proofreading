@@ -68,8 +68,6 @@ class Proofreading_Ajax_Handler {
 			ORDER BY `name` ASC", $lang);
 		$rules = $wpdb->get_results($sql, ARRAY_A);
 			
-		/*$included_rules = $wpdb->get_var("SELECT `included_rules` FROM {$wpdb->prefix}proofreading_rules_settings
-			WHERE lang_code = '$lang'");*/
 		$sql = $wpdb->prepare("SELECT `included_rules` 
 			FROM {$wpdb->prefix}proofreading_rules_settings
 			WHERE lang_code = %s", $lang);

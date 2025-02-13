@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Proofreading\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-26 17:43+0000\n"
-"PO-Revision-Date: 2018-02-26 17:52+0000\n"
+"PO-Revision-Date: 2025-01-10 17:24+0000\n"
 "Last-Translator: scribit <web@scribit.it>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -13,154 +13,129 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: proofreading.php:97 admin/partials/proofreading-admin-display.php:21
-msgid "Settings"
-msgstr "Konfigurationen"
-
-#: proofreading.php:110
-msgid "Proofreading is powered by"
-msgstr "Das Korrekturlesen wird unterstützt von"
-
-#. Name of the plugin
-#: admin/class-proofreading-admin.php:118
-#: admin/class-proofreading-admin.php:119
-#: admin/includes/class-proofreading-metabox.php:13
-#: admin/partials/proofreading-admin-display.php:21
-msgid "Proofreading"
-msgstr "Korrekturlesen"
-
-#: admin/includes/class-ajax-handler.php:84
-msgid "Your text is OK"
-msgstr "Dein Text ist KORREKT"
-
-#: admin/includes/class-ajax-handler.php:85
-msgid "ERRORS to correct"
-msgstr "FEHLER zu korrigieren"
-
-#: admin/includes/class-ajax-handler.php:86
-msgid "Hidden errors"
-msgstr "Versteckte Fehler"
-
-#: admin/includes/class-ajax-handler.php:87
-msgid "Translation ERROR"
-msgstr "Übersetzungsfehler"
-
-#: admin/includes/class-ajax-handler.php:88
-msgid "Too many errors. Did you select the right language?"
-msgstr "Zu viele Fehler Hast du die richtige Sprache gewählt?"
-
-#: admin/includes/class-ajax-handler.php:89
-msgid "Invalid request to Proofreading check service"
-msgstr "Ungültige Anforderung zum Korrekturlese-Dienst"
-
-#: admin/includes/class-ajax-handler.php:90
-msgid "Show error in the text"
-msgstr "Fehler im Text anzeigen"
-
-#: admin/includes/class-ajax-handler.php:91
-msgid "Hide error"
-msgstr "Fehler ausblenden"
-
-#: admin/includes/class-ajax-handler.php:92
-msgid "Hide all errors in this category"
-msgstr "Alle Fehler in dieser Kategorie ausblenden"
-
-#: admin/includes/class-ajax-handler.php:93
-msgid "Show hidden errors"
-msgstr "Versteckte Fehler anzeigen"
-
-#: admin/includes/class-ajax-handler.php:94
-msgid "Please set editor in \"Visual\" mode before analyze text"
+#: admin/partials/proofreading-admin-display.php:277
+msgid "A list of post titles"
 msgstr ""
-"Bitte setzen Sie den Editor im Visuell-Betrieb, bevor Sie den Text "
-"analysieren"
 
-#: admin/includes/class-proofreading-metabox.php:54
-msgid "Analyze"
-msgstr "Analysieren"
-
-#: admin/partials/proofreading-admin-display.php:25
-msgid "Languages"
-msgstr "Sprachen"
-
-#: admin/partials/proofreading-admin-display.php:28
+#: admin/partials/proofreading-admin-display.php:27
 msgid "About"
 msgstr "Informationen"
 
-#: admin/partials/proofreading-admin-display.php:69
-msgid "Settings saved."
-msgstr "Konfigurationen gespeichert."
+#: admin/partials/proofreading-admin-display.php:206
+#: admin/partials/proofreading-admin-display.php:252
+#| msgid "Activate"
+msgid "Active"
+msgstr ""
 
-#: admin/partials/proofreading-admin-display.php:69
-msgid "Saving Error."
-msgstr "Fehler speichern"
+#: admin/includes/class-proofreading-metabox.php:57
+msgid "Analyze"
+msgstr "Analysieren"
 
-#: admin/partials/proofreading-admin-display.php:71
-msgid "Dismiss this notice."
-msgstr "Ignoriere die Nachricht."
+#: admin/partials/proofreading-admin-display.php:174
+msgid "CONTACT US"
+msgstr "KONTAKTIERE UNS"
 
-#: admin/partials/proofreading-admin-display.php:86
+#: admin/partials/proofreading-admin-display.php:106
 msgid "Default correction Language"
 msgstr "Standardkorrektur Sprache"
 
-#: admin/partials/proofreading-admin-display.php:103
-msgid "Rules category"
-msgstr "Regelkategorie"
+#: admin/partials/proofreading-admin-display.php:229
+msgid "Disable active or unused/orphan shortcodes"
+msgstr ""
 
-#: admin/partials/proofreading-admin-display.php:104
+#: admin/partials/proofreading-admin-display.php:91
+msgid "Dismiss this notice."
+msgstr "Ignoriere die Nachricht."
+
+#: admin/partials/proofreading-admin-display.php:167
+msgid "DONATE WITH PAYPAL"
+msgstr "SPENDE MIT PAYPAL"
+
+#: admin/partials/proofreading-admin-display.php:125
 msgid "Enable or disable types of rule to be checked in the corrections."
 msgstr ""
 "Aktivieren oder deaktivieren Sie die zu prüfenden Regeltypen in den "
 "Korrekturen."
 
-#: admin/partials/proofreading-admin-display.php:105
-msgid "Select the language to manage the rules:"
-msgstr "Wählen Sie die Sprache, um die Regeln zu verwalten:"
+#: admin/includes/class-ajax-handler.php:103
+msgid "ERRORS to correct"
+msgstr "FEHLER zu korrigieren"
 
-#: admin/partials/proofreading-admin-display.php:117
-msgid "Select all rules"
-msgstr "Wähle alle Regeln aus"
+#: admin/partials/proofreading-admin-display.php:227
+msgid ""
+"Find every shortcode (by tag or content type) present in your posts, pages "
+"and custom type contents"
+msgstr ""
 
-#: admin/partials/proofreading-admin-display.php:128
-msgid "Save settings"
-msgstr "Änderungen übernehmen"
+#: admin/includes/class-ajax-handler.php:104
+msgid "Hidden errors"
+msgstr "Versteckte Fehler"
 
-#: admin/partials/proofreading-admin-display.php:135
-msgid "Support"
-msgstr "Unterstützung"
+#: admin/includes/class-ajax-handler.php:110
+msgid "Hide all errors in this category"
+msgstr "Alle Fehler in dieser Kategorie ausblenden"
 
-#: admin/partials/proofreading-admin-display.php:138
+#: admin/includes/class-ajax-handler.php:109
+msgid "Hide error"
+msgstr "Fehler ausblenden"
+
+#. Author URI of the plugin
+msgid "https://www.scribit.it/"
+msgstr "https://www.scribit.it/"
+
+#. URI of the plugin
+msgid ""
+"https://www.scribit.it/en/wordpress-plugins/proofreading-wordpress-plugin-"
+"corrects-your-errors/"
+msgstr ""
+"https://www.scribit.it/en/wordpress-plugins/proofreading-wordpress-plugin-"
+"corrects-your-errors/"
+
+#: admin/partials/proofreading-admin-display.php:158
 msgid "If you like our plugin please feel free to give us 5 stars :)"
 msgstr "Wenn Sie unser Plugin mögen, geben Sie uns bitte 5 Sterne :)"
 
-#: admin/partials/proofreading-admin-display.php:140
-msgid "WRITE A PLUGIN REVIEW"
-msgstr "SCHREIBEN SIE EINE PLUGIN REVIEW"
+#: admin/partials/proofreading-admin-display.php:172
+msgid "If you want some information about our Company"
+msgstr "Wenn Sie Informationen über unser Unternehmen wünschen"
 
-#: admin/partials/proofreading-admin-display.php:144
+#: admin/partials/proofreading-admin-display.php:165
 msgid "If you want to help us to improve our service please Donate a coffe"
 msgstr ""
 "Wenn Sie uns helfen möchten, unseren Service zu verbessern, spenden Sie "
 "bitte einen Kaffee"
 
-#: admin/partials/proofreading-admin-display.php:146
-msgid "DONATE WITH PAYPAL"
-msgstr "SPENDE MIT PAYPAL"
-
-#: admin/partials/proofreading-admin-display.php:150
-msgid "If you want some information about our Company"
-msgstr "Wenn Sie Informationen über unser Unternehmen wünschen"
-
-#: admin/partials/proofreading-admin-display.php:151
-msgid "CONTACT US"
-msgstr "KONTAKTIERE UNS"
-
-#: admin/partials/proofreading-admin-display.php:158
-#, php-format
+#: admin/partials/proofreading-admin-display.php:274
 msgid ""
-"Thanks to <a target=\"_blank\" href=\"%s\">Languagetool.org</a> services."
+"Insert into your WordPress website one or more random contents coming from "
+"your posts. The source contents can be pages, posts or custom post types."
 msgstr ""
-"Dank der Dienste von <a target=\"_blank\" href=\"%s\">Languagetool.org</a>"
+
+#: admin/includes/class-ajax-handler.php:107
+msgid "Invalid request to Proofreading check service"
+msgstr "Ungültige Anforderung zum Korrekturlese-Dienst"
+
+#: admin/partials/proofreading-admin-display.php:24
+msgid "Languages"
+msgstr "Sprachen"
+
+#: admin/partials/proofreading-admin-display.php:278
+msgid "One or more full contents or excerpts"
+msgstr ""
+
+#: admin/includes/class-ajax-handler.php:112
+msgid "Please set editor in \"Visual\" mode before analyze text"
+msgstr ""
+"Bitte setzen Sie den Editor im Visuell-Betrieb, bevor Sie den Text "
+"analysieren"
+
+#. Name of the plugin
+#: admin/class-proofreading-admin.php:131
+#: admin/class-proofreading-admin.php:132
+#: admin/includes/class-proofreading-metabox.php:15
+#: admin/partials/proofreading-admin-display.php:19
+msgid "Proofreading"
+msgstr "Korrekturlesen"
 
 #. Description of the plugin
 msgid ""
@@ -173,14 +148,106 @@ msgstr ""
 "Artikeln und Seiten Ihrer Site Korrekturlesen und nützliche Tipps für die "
 "Verbesserung Ihrer Texte geben."
 
-#. URI of the plugin
-msgid "https://www.scribit.it/pages/wordpress/proofreading.html"
-msgstr "https://www.scribit.it/pages/wordpress/proofreading.html"
+#. %s: WordPress url to Classic Editor plugin
+#: admin/includes/class-proofreading-metabox.php:73
+#, php-format
+msgid ""
+"Proofreading is not yet compatible with Gutenberg editor; please use <a "
+"target=\"_blank\" rel=\"nofollow\" href=\"%s\">Classic Editor</a> instead."
+msgstr ""
+
+#: admin/class-proofreading-admin.php:168
+msgid "Proofreading is powered by"
+msgstr "Das Korrekturlesen wird unterstützt von"
+
+#. %s: WordPress url to Classic Editor plugin
+#: admin/class-proofreading-admin.php:110
+#, php-format
+msgid ""
+"Proofreading plugin is not yet Gutenberg ready. Please use %s instead if you "
+"want a full compatibility."
+msgstr ""
+
+#: admin/partials/proofreading-admin-display.php:279
+msgid "Raw URLs to posts permalink"
+msgstr ""
+
+#: admin/partials/proofreading-admin-display.php:124
+msgid "Rules category"
+msgstr "Regelkategorie"
+
+#: admin/partials/proofreading-admin-display.php:149
+msgid "Save settings"
+msgstr "Änderungen übernehmen"
+
+#: admin/partials/proofreading-admin-display.php:89
+msgid "Saving Error."
+msgstr "Fehler speichern"
 
 #. Author of the plugin
 msgid "Scribit"
 msgstr "Scribit"
 
-#. Author URI of the plugin
-msgid "https://www.scribit.it/"
-msgstr "https://www.scribit.it/"
+#: admin/partials/proofreading-admin-display.php:228
+msgid "Search unused shortcodes"
+msgstr ""
+
+#: admin/partials/proofreading-admin-display.php:138
+msgid "Select all rules"
+msgstr "Wähle alle Regeln aus"
+
+#: admin/partials/proofreading-admin-display.php:126
+msgid "Select the language to manage the rules:"
+msgstr "Wählen Sie die Sprache, um die Regeln zu verwalten:"
+
+#: admin/class-proofreading-admin.php:174
+msgid "Settings"
+msgstr "Konfigurationen"
+
+#: admin/partials/proofreading-admin-display.php:89
+msgid "Settings saved."
+msgstr "Konfigurationen gespeichert."
+
+#: admin/includes/class-ajax-handler.php:108
+msgid "Show error in the text"
+msgstr "Fehler im Text anzeigen"
+
+#: admin/includes/class-ajax-handler.php:111
+msgid "Show hidden errors"
+msgstr "Versteckte Fehler anzeigen"
+
+#: admin/partials/proofreading-admin-display.php:230
+msgid "Test your shortcodes before use them in your website"
+msgstr ""
+
+#. %s: Url to LanguageTool webpage
+#: admin/partials/proofreading-admin-display.php:182
+#, php-format
+msgid ""
+"Thanks to <a target=\"_blank\" href=\"%s\">Languagetool.org</a> services."
+msgstr ""
+"Dank der Dienste von <a target=\"_blank\" href=\"%s\">Languagetool.org</a>"
+
+#: admin/includes/class-ajax-handler.php:106
+msgid "Too many errors. Did you select the right language?"
+msgstr "Zu viele Fehler Hast du die richtige Sprache gewählt?"
+
+#: admin/includes/class-ajax-handler.php:105
+msgid "Translation ERROR"
+msgstr "Übersetzungsfehler"
+
+#: admin/partials/proofreading-admin-display.php:187
+msgid "Try other Scribit plugins:"
+msgstr ""
+
+#: admin/partials/proofreading-admin-display.php:160
+msgid "WRITE A PLUGIN REVIEW"
+msgstr "SCHREIBEN SIE EINE PLUGIN REVIEW"
+
+#: admin/partials/proofreading-admin-display.php:275
+msgid "You can display different informations:"
+msgstr ""
+
+#: admin/includes/class-ajax-handler.php:102
+msgid "Your text is OK"
+msgstr "Dein Text ist KORREKT"

@@ -31,47 +31,49 @@ class Proofreading_Ajax_Handler {
 	}
 	
 	function handle_ajax_analyze() {
-		if( ! wp_verify_nonce( $_REQUEST['nonce'], 'webdev' ) ){
+		if( isset($_REQUEST['nonce']) && ! wp_verify_nonce( sanitize_text_field(wp_unslash($_REQUEST['nonce'])), 'webdev' ) ){
 			wp_send_json_error();
 		}
 
-		if (!isset($_REQUEST['language']) || strlen($_REQUEST['language']) > 2) return;
+		if (!isset($_REQUEST['language']) || strlen(sanitize_text_field(wp_unslash($_REQUEST['language']))) > 2) return;
 		
 		require_once plugin_dir_path( __FILE__ ) . 'class-languagetool.php';
 		$lt = new LanguageTool();
 		
 		global $wpdb;
-		$sql = $wpdb->prepare("SELECT `included_rules` FROM {$wpdb->prefix}proofreading_rules_settings WHERE lang_code = %s", $_REQUEST['language']);
-		$included_rules = $wpdb->get_var($sql);
+		$included_rules = $wpdb->get_var($wpdb->prepare("SELECT `included_rules` FROM {$wpdb->prefix}proofreading_rules_settings WHERE lang_code = %s", sanitize_text_field(wp_unslash($_REQUEST['language']))));
 		
-		$body = $lt->check($_REQUEST['post_text'], $_REQUEST['language'], $included_rules);
-		
-		wp_send_json_success( array(
-			'result' 		  => json_encode($body),
-			'nonce'           => wp_create_nonce( 'webdev' ),
-		) );
+		if (isset($_REQUEST['post_text'])){
+			$body = $lt->check(
+				sanitize_text_field(wp_unslash($_REQUEST['post_text'])),
+				sanitize_text_field(wp_unslash($_REQUEST['language'])),
+				$included_rules);
+			
+			wp_send_json_success( array(
+				'result' 		  => json_encode($body),
+				'nonce'           => wp_create_nonce( 'webdev' ),
+			) );
+		}
 	}
 	
 	public function handle_select_lang_rules($code) {
-		if( ! wp_verify_nonce( $_REQUEST['nonce'], 'webdev' ) ){
+		if( isset($_REQUEST['nonce']) && ! wp_verify_nonce( sanitize_text_field(wp_unslash($_REQUEST['nonce'])), 'webdev' ) ){
 			wp_send_json_error();
 		}
 		
 		global $wpdb;
 		$result = array();
 		
-		$lang = esc_sql($_POST['lang_code']);
+		$lang = isset($_POST['lang_code']) ? esc_sql(sanitize_text_field(wp_unslash($_POST['lang_code']))) : 'en';
 		
-		$sql = $wpdb->prepare("SELECT `name`, `key`
+		$rules = $wpdb->get_results($wpdb->prepare("SELECT `name`, `key`
 			FROM {$wpdb->prefix}proofreading_rules
 			WHERE lang_code = %s
-			ORDER BY `name` ASC", $lang);
-		$rules = $wpdb->get_results($sql, ARRAY_A);
-			
-		$sql = $wpdb->prepare("SELECT `included_rules` 
+			ORDER BY `name` ASC", $lang), ARRAY_A);
+
+		$included_rules = $wpdb->get_var($wpdb->prepare("SELECT `included_rules` 
 			FROM {$wpdb->prefix}proofreading_rules_settings
-			WHERE lang_code = %s", $lang);
-		$included_rules = $wpdb->get_var($sql);
+			WHERE lang_code = %s", $lang));
 		
 		$rules_included_keys = array();
 		if ($included_rules != null){

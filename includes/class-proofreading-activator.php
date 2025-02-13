@@ -70,10 +70,9 @@ class Proofreading_Activator {
 			$wp_lang = get_bloginfo("language");
 			if ( $i = strrpos( $wp_lang, '-' ) ) $wp_lang = substr( $wp_lang, 0, $i );
 			
-			$sql = $wpdb->prepare("SELECT code
+			$res = $wpdb->get_col($wpdb->prepare("SELECT code
 				FROM `{$wpdb->prefix}proofreading_languages`
-				WHERE longCode = %s", $wp_lang);
-			$res = $wpdb->get_col($sql);
+				WHERE longCode = %s", $wp_lang));
 
 			if ( count($res) > 0 ) update_option( 'proofreading-language-default', $res[0]);
 		}

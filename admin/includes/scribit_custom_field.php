@@ -68,7 +68,8 @@ class ScribitCustomField {
         }
         foreach( $form_fields as $form_field ) {
             $name = $form_field['name'];
-            update_post_meta( $post_id, $name, esc_attr( $_POST[$name] ) );
+            if (isset($_POST[$name]))
+                update_post_meta( $post_id, $name, esc_attr( sanitize_text_field(wp_unslash($_POST[$name])) ) );
         }   
 		
     }

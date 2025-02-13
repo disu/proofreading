@@ -69,6 +69,7 @@ class ProofreadingMetaBox {
 			'class' => 'proofreading_compatibility_note',
 			'type' => 'div',
 			'label' => sprintf(
+				/* translators: %s: WordPress url to Classic Editor plugin */
 				__( 'Proofreading is not yet compatible with Gutenberg editor; please use <a target="_blank" rel="nofollow" href="%s">Classic Editor</a> instead.', 'proofreading' ),
 				esc_url( 'https://wordpress.org/plugins/classic-editor/' )
 			)

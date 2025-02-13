@@ -15,7 +15,7 @@
  * Plugin Name:       Proofreading
  * Plugin URI:        https://www.scribit.it/en/wordpress-plugins/proofreading-wordpress-plugin-corrects-your-errors/
  * Description:       Proofreading allows you to correct texts on your Wordpress site. This plugin allows you to proofread in 30 different languages on articles and pages of your site also providing useful tips for the improvement of your writings.
- * Version:           1.2.1
+ * Version:           1.2.2
  * Author:            Scribit
  * Author URI:        https://www.scribit.it/
  * License:           GPL-2.0+

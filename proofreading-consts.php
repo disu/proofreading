@@ -7,7 +7,7 @@
  * @author     Scribit <wordpress@scribit.it>
  */
 
-define( 'PROOFREADING_VERSION', '1.2.1' );
+define( 'PROOFREADING_VERSION', '1.2.2' );
 
 define( 'PROOFREADING_VERSION_SETTINGNAME', 'proofreading-version' );	// From version 1.0.7
 

@@ -1,10 +1,10 @@
 === Proofreading ===
 Contributors: scribit
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=riccardosormani@gmail.com&item_name=Proofreading WordPress plugin donation&no_note=0
+Donate link: https://www.paypal.com/donate/?cmd=_donations&business=riccardosormani@gmail.com&item_name=Proofreading%20WordPress%20plugin%20donation&no_note=0
 Tags: typo, editing, misprint, errata, revision
 Requires at least: 4.0
-Tested up to: 6.4.3
-Stable tag: 1.2.1
+Tested up to: 6.7.1
+Stable tag: 1.2.2
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,6 +65,12 @@ After installation the plugin select your WordPress installation language as def
 4. Settings page. Here you can: Select your default language, Enable/Disable error categories to check for every language
 
 == Changelog ==
+
+= 1.2.2 =
+* Escaping improved
+* Code refactoring
+* Placeholder for translators
+* WordPress 6.7.1 compatibility (not Gutenberg)
 
 = 1.2.1 =
 * Security fixes

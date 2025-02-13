@@ -148,6 +148,8 @@ ul.proofreading_corrections li{
 #proofreading_box .spinner{
 	margin-top: 6px;
 	float: none;
+	height: 20px;
+	width: 20px;
 }
 #proofreading_analyze{
 	float: left;
@@ -228,4 +230,21 @@ ul.proofreading_corrections li{
 .scribit_support_description {
    text-align: right;
    padding-right: 1em;
+}
+
+.plugin-card .desc>ul {
+    margin-left: 148px
+}
+.plugin-card .column-description>ul {
+    margin-top: 0;
+}
+@media (min-width: 1101px) {
+    .plugin-card .desc>ul {
+        margin-right:128px
+    }
+}
+@media (min-width: 481px) and (max-width:781px) {
+    .plugin-card .desc>ul {
+        margin-right:128px
+    }
 }

@@ -105,9 +105,10 @@ class Proofreading_Admin {
 			if (!isset($_POST['submit'])) {  ?>
 					
 				<div class="notice notice-warning">
-					<p><?= sprintf(
-						__( 'Proofreading plugin is not yet Gutenberg ready. Please use <a target="_blank" rel="nofollow" href="%s">Classic Editor plugin</a> instead if you want a full compatibility.', 'proofreading' ), 
-						esc_url( 'https://wordpress.org/plugins/classic-editor/' ) 
+					<p><?php echo sprintf(
+						/* translators: %s: WordPress url to Classic Editor plugin */
+						esc_html__( 'Proofreading plugin is not yet Gutenberg ready. Please use %s instead if you want a full compatibility.', 'proofreading' ), 
+						'<a target="_blank" rel="nofollow" href="'. esc_url( 'https://wordpress.org/plugins/classic-editor/' ) .'">Classic Editor plugin</a>'
 					); ?></p>
 				</div>
 				
